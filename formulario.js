@@ -1,8 +1,4 @@
-const form = document.getElementById('form')
-const nome = document.getElementById('username')
-const email = document.getElementById('email')
-const assunto = document.getElementById('assunto')
-const mensagem = document.getElementById('mensagem')
+
 
 
 

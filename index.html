@@ -130,25 +130,26 @@
         
             
 
-        <form
-        action="https://formsubmit.co/jannirythzapata@gmail.com" 
-        method="POST"
-        class="form">
-        <label for="name">Nome</label>
-        <input type="text" name="name" id="name" required />
+        <form id="form">
+            <div class="mensagem"></div>
+            <div>
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" id="nome" required />
+    </div>
+    <div>
         <label for="email">E-mail</label>
-        <input type="email" name="email" id="email" required />
-        <label for="message">Mensagem</label>
-        <input type="message" name="message" id="message" required />
+        <input type="email" name="email" id="email"required />
+    </div>
+    <div>
         <label for="asunto">Asunto</label>
-        <textarea name="message" id="message" required></textarea>
-        <input type="hidden" name="_captcha" value="false" />
-        <input
-          type="hidden"
-          name="_next"
-          value=""
-        />
-        <button type="submit">Enviar</button>
+        <input type="asunto" name="asunto" id="asunto" required />
+    </div>
+    <div>
+        <label for="mensagem">Mensagem</label>
+        <textarea name="mensagem" id="mensagem"required ></textarea>
+    </div>
+
+        <button id="submit-buttom" type="submit" value="Enviar">Enviar</button>
 </form> 
 
 <script src="./formulario.js"></script>

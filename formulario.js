@@ -1,6 +1,31 @@
+const nomeInput = document.querySelector('#nome');
+const emailInput = document.querySelector('#email');
+const asuntoInput = document.querySelector('#asunto');
+const mensagemInput = document.querySelector('#mensagem');
+const submitButtom = document.querySelector('#submit-buttom');
 
+const errorMessage = document.querySelector('.mensagem')
 
+submitButtom.addEventListener('click', (e) =>{
+  e.preventDefault()
 
+  const nomeValue = nomeInput.value;
+  const emailValue = emailInput.value;
+  const asuntoValue = asuntoInput.value;
+  const mensagemValue= mensagemInput.Value;
+  
+  
+  if(nomeValue === '' || emailValue === '' || 
+  asuntoValue === '' || mensagemValue === '' ) {
+     errorMessage.textContent = "Complete todos os campos!";
+     setTimeout(() => {
+      errorMessage.textContent = "";
+    }, 3000);
+  }
+     return;
+
+   
+})
 
 
 //API

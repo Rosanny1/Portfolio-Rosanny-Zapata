@@ -145,7 +145,7 @@ align-items: flex-end;
    
 
   
-      .form {
+      #form {
       position: relative;
         width: 70%;
         max-width:50%;
@@ -155,22 +155,22 @@ align-items: flex-end;
        
       }
       
-      .form label,
-      .form input,
-      .form textarea,
-      .form button {
+      #form label,
+      #form input,
+      #form textarea,
+      #form button {
         display: block;
         width: 90%;
       }
       
-      .form label {
+      #form label {
         color: #fff;
         line-height: 1;
         margin-bottom: 0.5rem;
       }
       
-      .form input,
-      .form textarea {
+      #form input,
+      #form textarea {
         width: 300px;
         height: 30px;
         font: inherit;
@@ -182,13 +182,13 @@ align-items: flex-end;
        
       }
       
-      .form textarea {
+      #form textarea {
         min-height: 100px;
         resize: vertical;
       }
       
       
-      .form button {
+      #form button {
         
         position: center; 
         display: flex;
@@ -206,9 +206,19 @@ align-items: flex-end;
   flex-wrap: wrap;
   margin-left: 110px;
       }
-      
+       .mensagem { 
+      background-color: red;
+      position: relative;
+        width: 70%;
+        max-width:50%;
+        font-size: 20px;
+     flex-direction: column;
+     border-radius: 8px;
+     align-items: center;
+        display: flex;
+       }
 
-@media screen and (max-width 480px) {
+@media screen and (max-width 460 px) {
  body{
 margin: 0;
 padding: 0;
